@@ -72,7 +72,7 @@
                    source page. -->
 				   
 				   
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -85,13 +85,13 @@
     <div class="item active" id = "carouselItem">
       <img src="http://cdn.aarp.net/content/dam/travel/destination-images/mount-rainier/2014-01/1400-mount-rainier-wa-flowers.imgcache.rev1409258920002.web.jpg" alt="...">
       <div class="carousel-caption">
-			Mt. Rainier in all her glory, seen from the National Park lands surrounding it.
+			Mt. Rainier in all her glory, seen from Paradise Valley.
       </div>
 	</div>
 	<div class="item" id = "carouselItem">
       <img src="https://www.rmiguides.com/_includes/_images/rainier_4day_full.jpg" alt="...">
       <div class="carousel-caption" id = "cross-section">
-			A group of climbers reaching the summit.
+			A group of climbers reaching for the summit.
       </div>
     </div>
 	 <div class="item" id = "carouselItem">
@@ -127,12 +127,19 @@
 
             You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
-
-        <div id="description">
+		<ul class = "nav nav-tabs">
+			<li class = "active"><a data-toggle="tab" href="#description">Description</a></li>
+			<li><a data-toggle = "tab" href="#history">History</a></li>
+			<li><a data-toggle = "tab" href="#stats">Statistics</a></li>
+			<li><a data-toggle = "tab" href="#map">Map</a></li>
+			<li><a data-toggle = "tab" href="#links">Links</a></li>
+		<br><br>
+		<div class = "tab-content">
+        <div id="description" class="tab-pane fade in active">
           <h2>About</h2>
           <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
         </div>
-        <div id="history">
+        <div id="history" class = "tab-pane fade">
           <h2>History</h2>
           <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
 
@@ -144,7 +151,7 @@
 
           <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
         </div>
-        <div id="stats">
+        <div id="stats" class = "tab-pane fade">
           <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
           <h2>Statistics</h2>
@@ -168,16 +175,16 @@
           </dl>
         </div>
 
-      </div>
+      
 
-      <div id="map">
+      <div id="map" class = "tab-pane fade">
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
         <div id="map-container"></div>
       </div>
 
-      <div id="links">
+      <div id="links" class = "tab-pane fade">
         <h2>Links</h2>
         <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
         <ul class="links-list">
@@ -187,13 +194,14 @@
           <li><a href="https://content.lib.washington.edu/warnerweb/essay.html">John Muir's Ascent of Mt. Rainier</a></li>
         </ul>
       </div>
-
+		</div>
       <hr>
 
       <footer>
         <p>Made by Jane Student in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
       </footer>
     </div> <!-- /container -->
+	</div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
