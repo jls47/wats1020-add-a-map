@@ -54,7 +54,7 @@ var overlayMaps = {
 
 //var mymap = L.map('map-container').setView([46.852886, -121.760374], 13);
 var myMap = L.map('map-container', {
-	center: [46.82, -121.760374],
+	center: [46.86, -121.89],
 	zoom: 12,
 	layers: [satellite, POIs]
 });
