@@ -19,10 +19,11 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -69,6 +70,48 @@
                    for the images. If you are using the Mt. Rainier images, then
                    there are readymade captions available from the Wikipedia
                    source page. -->
+				   
+				   
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	</ol>
+
+  <!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+    <div class="item active" id = "carouselItem">
+      <img src="http://cdn.aarp.net/content/dam/travel/destination-images/mount-rainier/2014-01/1400-mount-rainier-wa-flowers.imgcache.rev1409258920002.web.jpg" alt="...">
+      <div class="carousel-caption">
+			Mt. Rainier in all her glory, seen from the National Park lands surrounding it.
+      </div>
+	</div>
+	<div class="item" id = "carouselItem">
+      <img src="https://www.rmiguides.com/_includes/_images/rainier_4day_full.jpg" alt="...">
+      <div class="carousel-caption" id = "cross-section">
+			A group of climbers reaching the summit.
+      </div>
+    </div>
+	 <div class="item" id = "carouselItem">
+      <img src="https://wallaceterrycjr.files.wordpress.com/2014/08/cross-section.jpg" alt="...">
+      <div class="carousel-caption" id = "cross-section">
+			A geologic cross section from 1969 with some details that show how ancient lava flows make up much of the mountain's elevation gain.
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
       </div>
     </div>
 
@@ -155,7 +198,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
         <script src="js/main.js"></script>
 
