@@ -47,9 +47,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#description">Description</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#stats">Stats</a></li>
+                <li><a data-toggle="tab" href="#description">Description</a></li>
+                <li><a data-toggle = "tab" href="#history">History</a></li>
+                <li><a data-toggle = "tab" href="#stats">Statistics</a></li>
               </ul>
             </li>
             <li><a href="#map">Map</a></li>
@@ -131,8 +131,7 @@
 			<li class = "active"><a data-toggle="tab" href="#description">Description</a></li>
 			<li><a data-toggle = "tab" href="#history">History</a></li>
 			<li><a data-toggle = "tab" href="#stats">Statistics</a></li>
-			<li><a data-toggle = "tab" href="#map">Map</a></li>
-			<li><a data-toggle = "tab" href="#links">Links</a></li>
+		</ul>
 		<br><br>
 		<div class = "tab-content">
         <div id="description" class="tab-pane fade in active">
@@ -177,14 +176,14 @@
 
       
 
-      <div id="map" class = "tab-pane fade">
+      <div id="map">
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
         <div id="map-container"></div>
       </div>
 
-      <div id="links" class = "tab-pane fade">
+      <div id="links">
         <h2>Links</h2>
         <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
         <ul class="links-list">
