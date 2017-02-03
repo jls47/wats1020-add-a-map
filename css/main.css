@@ -42,6 +42,31 @@ body{
 
 .carousel-caption{color: white; font-weight: bold; font-size: 1.1em; letter-spacing: 2px; background: rgba(0,0,0,0.3);}
 
+h2{
+	background-image: url("http://images.fineartamerica.com/images-medium-large/evergreen-forest-natural-selection-craig-tuttle.jpg");
+	background-position: left;
+	color: white;
+	width: 200px;
+	text-align: center;
+	border: 5px solid white;
+	border-radius: 10px;
+}
+
+#description h2{
+	border: 5px rgba(134, 222, 134, 0.4);
+	border-radius: 10px;
+}
+
+#history h2{
+	border: 5px rgba(134, 222, 134, 0.4);
+	border-radius: 10px;
+}
+
+#statistics h2{
+	border: 5px rgba(134, 222, 134, 0.4);
+	border-radius: 10px;
+}
+
 #description{
 	letter-spacing: 1px;
 	background: rgba(134, 222, 134, 0.4);
@@ -71,14 +96,10 @@ body{
 	box-shadow: 10px 0 0 rgba(134, 222, 134, 0.4), -10px 0 0 rgba(134, 222, 134, 0.4);
 }
 
-h2{
-	background-image: url("http://images.fineartamerica.com/images-medium-large/evergreen-forest-natural-selection-craig-tuttle.jpg");
-	background-position: left;
-	color: white;
-	width: 200px;
-	text-align: center;
-	border: 5px solid white;
-	border-radius: 10px;
-}
+
+
+
+
+
 
 
