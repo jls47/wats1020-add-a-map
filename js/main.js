@@ -20,27 +20,44 @@
 // these locations using a mapping tool such as Google Maps.)
 $(document).ready(function(){
 //tab navigation
-	$(".tab").click(function(){
-		tabClass = $(this).html().toLowerCase();
-		console.log(tabClass);
-		
-		window.scroll({
-			top: 2500, 
-			left: 0, 
-			behavior: 'smooth' 
-		});
 
+
+	$(".tab").click(function(e){
+		var tabClass = $(this).html().toLowerCase();
+		console.log(tabClass);
 		
 		var active = document.getElementsByClassName("tab-pane fade in active")[0].id;
 		console.log(active);
 		if(active.toString().includes(tabClass.toString())){
-			window.location.replace("#" + tabClass);
+			//window.location.replace("#" + tabClass);
+			e.preventDefault();
+
+			var target = this.hash;
+			var $target = $(target);
+
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+				window.location.hash = target;
+			});
+			
 		}else{
 			$(".nav-tabs").find(".active").toggleClass("active");
 			$(".nav-tabs").find("#"+tabClass.replace(/i/, "")).toggleClass("active");
 			$(".tab-content").find("#" + active).toggleClass("in active");
 			$(".tab-content").find("#" + tabClass).toggleClass("in active");
-			window.location.replace("#" + tabClass);
+			//window.location.replace("#" + tabClass);
+			
+			e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function () {
+				window.location.hash = target;
+				});
 			
 		}
 		
@@ -99,7 +116,5 @@ var myMap = L.map('map-container', {
 });
 
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
-
 });
-
 	
