@@ -2,6 +2,11 @@
    Author's custom styles
    ========================================================================== */
 
+body{
+	z-index: 1;
+}
+
+
 #map-container { height: 400px; }
 
 #carouselItem{max-height: 500px;}
