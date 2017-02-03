@@ -49,7 +49,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a data-toggle="tab" href="#description" class = "tab">Description</a></li>
                 <li><a data-toggle = "tab" href="#history" class = "tab">History</a></li>
-                <li><a data-toggle = "tab" href="#stats" class = "tab">Statistics</a></li>
+                <li><a data-toggle = "tab" href="#statistics" class = "tab">Statistics</a></li>
               </ul>
             </li>
             <li><a href="#map">Map</a></li>
@@ -122,6 +122,7 @@
         &mdash; John Muir, Naturalist
       </blockquote>
       <div id="about" role="tabpanel">
+	  
       <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
             http://getbootstrap.com/javascript/#tabs
 
@@ -135,11 +136,14 @@
 		<br><br>
 		<div class = "tab-content">
         <div id="description" class="tab-pane fade in active">
-          <h2>About</h2>
+		<br>
+          <h2><span class="glyphicon glyphicon-list-alt"></span>  About</h2>
           <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
-        </div>
+        <br>
+		</div>
         <div id="history" class = "tab-pane fade">
-          <h2>History</h2>
+		<br>
+          <h2><span class="glyphicon glyphicon-tree-conifer"></span>  History</h2>
           <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
 
           <p>Captain George Vancouver reached Puget Sound in early May 1792 and became the first European to see the mountain.</p>
@@ -149,11 +153,13 @@
           <p>John Muir climbed Mount Rainier in 1888, and although he enjoyed the view, he conceded that it was best appreciated from below. Muir was one of many who advocated protecting the mountain. In 1893, the area was set aside as part of the Pacific Forest Reserve in order to protect its physical/economic resources: timber and watersheds.</p>
 
           <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
-        </div>
+        <br>
+		</div>
         <div id="statistics" class = "tab-pane fade">
           <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
-          <h2>Statistics</h2>
+		<br>
+          <h2><span class="glyphicon glyphicon-stats"></span>  Statistics</h2> 
           <dl>
             <dt>Elevation</dt>
             <dd>14,411 ft (4,392 m)</dd>
@@ -172,19 +178,20 @@
             <dt>Easiest Route</dt>
             <dd>Rock/ice climb via Disappointment Cleaver</dd>
           </dl>
+		  <br>
         </div>
 
       
 
       <div id="map">
-        <h2>Map</h2>
+        <h2><span class="glyphicon glyphicon-fullscreen"></span>  Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
         <div id="map-container"></div>
       </div>
 
       <div id="links">
-        <h2>Links</h2>
+        <h2><span class="glyphicon glyphicon-link"></span>  Links</h2>
         <p class="lead">Learn more about Mt. Rainier by visiting these websites:</p>
         <ul class="links-list">
           <li><a href="http://www.nps.gov/mora/index.htm">Mt. Rainier National Parks Page</a></li>
