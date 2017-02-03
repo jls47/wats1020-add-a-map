@@ -29,10 +29,11 @@ $(document).ready(function(){
 		var active = document.getElementsByClassName("tab-pane fade in active")[0].id;
 		console.log(active);
 		if(active.toString().includes(tabClass.toString())){
-			//window.location.replace("#" + tabClass);
+
 			e.preventDefault();
 
 			var target = this.hash;
+			console.log("target" + target);
 			var $target = $(target);
 
 			$('html, body').stop().animate({
@@ -42,6 +43,7 @@ $(document).ready(function(){
 			});
 			
 		}else{
+			
 			$(".nav-tabs").find(".active").toggleClass("active");
 			$(".nav-tabs").find("#"+tabClass.replace(/i/, "")).toggleClass("active");
 			$(".tab-content").find("#" + active).toggleClass("in active");
@@ -61,8 +63,6 @@ $(document).ready(function(){
 			
 		}
 		
-		//window.location.href = ("#" + tabClass);
-		//window.location.replace("#description");
 		
 	});
 	
