@@ -29,7 +29,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" data-spy = "affix" data-offset-top="100">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -47,9 +47,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a data-toggle="tab" href="#description">Description</a></li>
-                <li><a data-toggle = "tab" href="#history">History</a></li>
-                <li><a data-toggle = "tab" href="#stats">Statistics</a></li>
+                <li><a data-toggle="tab" href="#description" class = "tab">Description</a></li>
+                <li><a data-toggle = "tab" href="#history" class = "tab">History</a></li>
+                <li><a data-toggle = "tab" href="#stats" class = "tab">Statistics</a></li>
               </ul>
             </li>
             <li><a href="#map">Map</a></li>
@@ -128,9 +128,9 @@
             You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
 		<ul class = "nav nav-tabs">
-			<li class = "active"><a data-toggle="tab" href="#description">Description</a></li>
-			<li><a data-toggle = "tab" href="#history">History</a></li>
-			<li><a data-toggle = "tab" href="#stats">Statistics</a></li>
+			<li class = "active" id = "descrption"><a data-toggle="tab" href="#description">Description</a></li>
+			<li id = "hstory"><a data-toggle = "tab" href="#history">History</a></li>
+			<li id = "statstics"><a data-toggle = "tab" href="#statistics">Statistics</a></li>
 		</ul>
 		<br><br>
 		<div class = "tab-content">
@@ -150,7 +150,7 @@
 
           <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
         </div>
-        <div id="stats" class = "tab-pane fade">
+        <div id="statistics" class = "tab-pane fade">
           <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
           <h2>Statistics</h2>
