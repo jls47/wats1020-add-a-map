@@ -19,6 +19,45 @@
 // interesting locations. (You'll need to figure out the latitude/longitude for
 // these locations using a mapping tool such as Google Maps.)
 $(document).ready(function(){
+//tab navigation
+	$(".tab").click(function(){
+		tabClass = $(this).html().toLowerCase();
+		console.log(tabClass);
+		
+		window.scroll({
+			top: 2500, 
+			left: 0, 
+			behavior: 'smooth' 
+		});
+
+		
+		var active = document.getElementsByClassName("tab-pane fade in active")[0].id;
+		console.log(active);
+		if(active.toString().includes(tabClass.toString())){
+			window.location.replace("#" + tabClass);
+		}else{
+			$(".nav-tabs").find(".active").toggleClass("active");
+			$(".nav-tabs").find("#"+tabClass.replace(/i/, "")).toggleClass("active");
+			$(".tab-content").find("#" + active).toggleClass("in active");
+			$(".tab-content").find("#" + tabClass).toggleClass("in active");
+			window.location.replace("#" + tabClass);
+			
+		}
+		
+		//window.location.href = ("#" + tabClass);
+		//window.location.replace("#description");
+		
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//MAPS	
 var topo = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2NoYWVmMTYiLCJhIjoiY2l5bDE1aHZ5MDAydTJ3bnpoaWZqbWpkcSJ9.ip2r4oOtxQdBmGDcL7IaWA', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
 	id: 'your.mapbox.project.id'
