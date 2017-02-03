@@ -15,7 +15,7 @@
 }
 
 .affix + .container-fluid{
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 .carousel-caption{color: white; font-weight: bold; font-size: 1.1em; letter-spacing: 2px; background: rgba(0,0,0,0.3);}
